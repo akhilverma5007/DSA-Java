@@ -1,5 +1,7 @@
 package Fundamentals;
 
+import java.util.Scanner;
+
 public class Conditionals_Loops_SwitchStatements {
     public static void main(String[] args) {
 
@@ -17,6 +19,28 @@ public class Conditionals_Loops_SwitchStatements {
         }else{
             System.out.println("False.");
         }
+
+        // Multiple If Else Condition
+        int salary = 12000;
+        if(salary >= 10000){
+            salary += 2000;
+        }else if(salary < 10000){
+            salary += 1000;
+        }else{
+            salary += 0;
+        }
+        System.out.println(salary);
+
+
+        // Loops 
+        // Ques print numbers using loop
+        for (int i = 1; i <= 5; i+=1) {
+            System.out.println(i);
+        } 
+
+        // print numbers 1 to n
+        Scanner in = new Scanner(System.in);
+        
 
         // While Loop (When you dont know how many times the loop is going to run)
         System.out.println("Loops Explanation> While Loop");
