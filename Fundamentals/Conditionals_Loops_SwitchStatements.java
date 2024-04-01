@@ -55,5 +55,29 @@ public class Conditionals_Loops_SwitchStatements {
         for(int i = 1; i <= 10; i++){
             System.out.println(i);
         }
+
+        // Do While Loop (Atleast one time Loop will run)
+        int n = 1;
+        do {
+            System.out.println(n);
+            n++;
+        } while (n <= 5);
+
+
+        // DIfference between if if AND if else if
+        int anum = 1;
+        int bnum = 1;
+        if(anum == bnum){ // if condition one is true, it will still keep checking rest of conditions
+            System.out.println("success");
+        }if(anum == bnum){
+            System.out.println("success 2");
+        }
+
+
+        if(anum == bnum){  // where condition met true it will not further check rest conditions
+            System.out.println("success");
+        }else if(anum == bnum){
+            System.out.println("success 2");
+        }
     }
 }

@@ -6,18 +6,22 @@ import java.util.Scanner;
 public class Largest_Number {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter two numbers to find the largest amungst them!");
-        System.out.print("Enter Number 1: ");
+        System.out.print("Enter three numbers to find the largest amungst them: ");
         int num1 = in.nextInt();
-        System.out.print("Enter Number 2: ");
         int num2 = in.nextInt();
+        int num3 = in.nextInt(); 
 
-        if(num1>num2){
-            System.out.println(num1 + " is Greatest.");
-        }else if (num2>num1){
-            System.out.println(num2 + " is Greatest.");
-        }else{
-            System.out.println("Both are equal.");
-        }
+        // int max = num1;
+        // if (num2 > max){
+        //     max = num2;
+        // }if(num3 > max){
+        //     max = num3;
+        // }    
+
+            // Using Math.max
+            int max = Math.max(Math.max(num2, num2), num3);
+        System.out.println("max no is " + max );
+
+
     }
 }
