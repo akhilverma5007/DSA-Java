@@ -4,7 +4,6 @@ public class Linear_Search_Finding_Even_Digits {
         int[] nums = {12, 345, 2, 6, 7896};
         findEvenNumberDigits(nums);
         // findEvenNumberDigits2(nums);
-
     }
 
     static void findEvenNumberDigits(int[] nums) {
@@ -29,7 +28,7 @@ public class Linear_Search_Finding_Even_Digits {
     }
 
 
-     // Simplest way
+    // Simplest way
     // static void findEvenNumberDigits2(int[] nums){
     //     for (int index = 0; index < nums.length; index++) {
     //         // System.out.println(nums[index]);

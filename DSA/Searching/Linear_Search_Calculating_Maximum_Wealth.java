@@ -9,7 +9,6 @@ public class Linear_Search_Calculating_Maximum_Wealth {
                         {3,4,3},
                         {3,2,13}
                     };
-
     maxWeath(accounts);
 }
 
