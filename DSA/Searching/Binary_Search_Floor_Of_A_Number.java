@@ -7,22 +7,21 @@ public class Binary_Search_Floor_Of_A_Number{
         System.out.println(floorOfNumberUsing_BinarySearch(arr, target));
     }
 
+    // greatest numer smaller or = traget number
     static int floorOfNumberUsing_BinarySearch(int[] arr, int target){
         int start = 0;
         int end = arr.length - 1;
+        
         while(start <= end){
             int mid = start + (end-start) / 2;
-            System.out.println(mid);
             if(target == arr[mid]){
-                return arr[mid];
-            }else if(target < arr[mid]){
-                end = mid - 1;
-                return arr[mid];
-            }else{
+                return mid;
+            }else if(target > arr[mid]){
                 start = mid + 1;
-                return arr[mid];
+            }else{
+                end = mid - 1;
             }
         }
-    return -1;
+        return end;
     }
 }
