@@ -1,5 +1,4 @@
 package DSA.Searching;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Binary_Search {
